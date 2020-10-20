@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h4 class="modal-title"> {{ title }} </h4>
+    <!-- <button type="button" class="close" aria-label="Close"></button> -->
+
+</div>
+
+<div class="modal-body">
+    <form #BlogTypeEditForm="ngForm" (submit)="onSubmit()">
+        <div class="form-group">
+            <label>Tên Blog</label>
+
+        </div>
+        <button class="btn btn-primary mt-2">{{ titleSave }}</button>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Đóng</button>
+</div>
